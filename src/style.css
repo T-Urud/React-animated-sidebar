@@ -36,7 +36,9 @@ h2{
   flex-direction: column;
   color: var(--white);
   position: sticky;
-  /* width: 4rem; */
+}
+.small{
+  width: 4rem;
 }
 
 .top-wrapper{

@@ -1,10 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import Navigation from "./Navigation";
 import ExpandBtn from "./btn/ExpandBtn";
 
 const Sidebar = () => {
+  const [closed, isClosed] = useState(false);
+
+  const handleClose = () => {
+    isClosed(!closed);
+  };
+
   return (
-    <nav className="sidebar">
+    <nav className={`${closed ? "small" : ""} sidebar`}>
       <div className="top-wrapper">
         <div className="top">
           <a href="#" className="logo-wrap">
@@ -12,7 +18,7 @@ const Sidebar = () => {
           </a>
           <span className="company-name">Aurora Health</span>
         </div>
-        <ExpandBtn />
+        <ExpandBtn onClick={handleClose} />
       </div>
       <div className="search-wrap">
         <input type="text" name="" id="" />
