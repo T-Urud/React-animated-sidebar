@@ -3,14 +3,12 @@ import { NavLink } from "react-router-dom";
 
 const Navigation = ({ logo, name }) => {
   return (
-    <ul>
-      <NavLink>
-        <li>
-          <img src={logo} alt={`${name} logo`} />
-          <span>{name}</span>
-        </li>
-      </NavLink>
-    </ul>
+    <NavLink>
+      <li>
+        <img src={logo} alt={`${name} logo`} />
+        <span className="link-name-wrapper">{name}</span>
+      </li>
+    </NavLink>
   );
 };
 
