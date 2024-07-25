@@ -1,12 +1,15 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 const Navigation = ({ logo, name }) => {
   return (
     <ul>
-      <li>
-        <span>{logo}</span>
-        <span>{name}</span>
-      </li>
+      <NavLink>
+        <li>
+          <img src={logo} alt={`${name} logo`} />
+          <span>{name}</span>
+        </li>
+      </NavLink>
     </ul>
   );
 };

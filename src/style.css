@@ -24,6 +24,12 @@ h2{
   font-size: 0.9rem;
 }
 
+li{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
 .sidebar{
   background-color: var(--nav-background);
   padding: 1rem;
