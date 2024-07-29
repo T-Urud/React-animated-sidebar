@@ -118,4 +118,8 @@ li{
 
 .link-name-wrapper{
   font-weight: 600;
+  color: var(--white);
+}
+.link-name-wrapper .hidden{
+  display: none;
 }

@@ -29,7 +29,11 @@ const Sidebar = () => {
       <div className="menu-nav">
         <h2>Main</h2>
         <ul>
-          <Navigation logo="/images/icons/home.svg" name="Home" />
+          <Navigation
+            logo="/images/icons/home.svg"
+            name="Home"
+            isClosed={closed}
+          />
           <Navigation logo="/images/icons/cube.svg" name="Orders" />
           <Navigation logo="/images/icons/folder.svg" name="Documentation" />
           <Navigation logo="/images/icons/map.svg" name="Map Overview" />
