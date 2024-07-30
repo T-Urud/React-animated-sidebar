@@ -23,7 +23,9 @@ const Sidebar = () => {
         </div>
       </div>
       <div className="search-wrap">
-        <img src="./images/icons/loupe.svg" alt="" />
+        <div className="img-container">
+          <img src="./images/icons/loupe.svg" alt="" />
+        </div>
         <input type="text" name="" id="" placeholder="Search for anything..." />
       </div>
       <div className="menu-nav">

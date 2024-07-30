@@ -1,9 +1,10 @@
 :root{
-  --nav-background: #6b75c1;
+  --nav-background: #FCFCFD;
   --white: #FCFCFC;
-  --background2: #76767632;
+  --background2: #ebedef;
   --expand: #2D6FDA;
   --exit: #E32626;
+  --purple: #efe3fc;
 }
 
 *{
@@ -18,6 +19,7 @@ body{
   padding: 1rem;
   height: 100%;
   font-size: 16px;
+  background: #C7D2DC;
 }
 
 h2{
@@ -26,15 +28,26 @@ h2{
   font-weight: 300;
 }
 
+ul{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
 li{
   display: flex;
   align-items: center;
   gap: 1rem;
+  height: 35px;
+}
+li:hover{
+  background-color: var(--purple);
 }
 
 .sidebar{
-  background-color: var(--nav-background);
-  padding: 2.5rem 1rem;
+  background-color: var(--white);
+  padding: 2.5rem 0;
   height: 100%;
   min-height: 50rem;
   max-width: 18rem;
@@ -42,7 +55,7 @@ li{
   border-radius: 1rem;
   display: flex;
   flex-direction: column;
-  color: var(--white);
+  color: var(--purple);
   position: sticky;
 }
 .small{
@@ -76,8 +89,9 @@ li{
   display: grid;
   place-items: center;
   top: 0;
-  right: -2rem;
+  right: -1rem;
   cursor: pointer;
+  /* background-color: #4A516D; */
 }
 
 .isClicked{
@@ -92,16 +106,24 @@ li{
   padding: 0 0.6rem;
   height: 2rem;
   border-radius: 0.5rem;
-  background-color: var(--white);
+  background-color: var(--purple);
   margin: 1rem 0 2rem;
 }
 .search-wrap input{
-  width: 100%;
+  width: 80%;
   background: none;
   border: transparent;
   outline: none;
-  color: var(--nav-background);
   font-size: 1rem;
+}
+
+.img-container{
+  position: relative;
+
+}
+.img-container img{
+  position: absolute;
+  transform: translate(-50%, -50%);
 }
 
 .menu-nav{
@@ -110,15 +132,10 @@ li{
   gap: 0.5rem;
   margin-bottom: 1rem;
 }
-.menu-nav ul{
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
 
 .link-name-wrapper{
   font-weight: 600;
-  color: var(--white);
+  color: #303651;
 }
 .link-name-wrapper .hidden{
   display: none;
